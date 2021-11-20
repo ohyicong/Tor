@@ -1,26 +1,21 @@
-from proxy import Proxy
-from proxy.Color import *
-torBanner = '''
-%s%s----------------------------------------------------------------------------
-%s%s _____          ___                    ___              _           
-|_   _|__ _ _  | _ \_ _ _____ ___  _  / __| ___ _ ___ _(_)__ ___ ___
-  | |/ _ \ '_| |  _/ '_/ _ \ \ / || | \__ \/ -_) '_\ V / / _/ -_|_-<
-%s%s  |_|\___/_|   |_| |_| \___/_\_\\_,  | |___/\___|_|  \_/|_\__\___/__/
-                                |__/                               
-                                       %s%s:-%s%s  by Nasir Khan (r0ot h3x49)
-%s%s----------------------------------------------------------------------------
-''' % (fg, sb, fc, sb, fg, sb, fw, sb, fg, sb, fg, sb)
-class TorServiceSetup(object):
-	"""class to setup and start tor sevices"""
+import tor_proxy
+import time	
 
-	def StartService(self):
-		TorProxy = Proxy()
-		print(torBanner)
-		TorProxy.ConfigureTor
-		
-def main():
-	Service = TorServiceSetup()
-	Service.StartService()
-	
 if __name__ == '__main__':
-	main()
+    tor_proxy = tor_proxy.Proxy(connection_port = "9050", 
+                  control_port = "9051", 
+                  refesh_rate = "60", 
+                  exit_nodes = "{SG},{JP}", 
+                  exclude_nodes = "{US}", 
+                  exclude_exit_nodes = "{KR}")
+	# Start tor proxy 
+    tor_proxy.start
+    
+    # Clear tor cache 
+    tor_proxy.new_identity
+    
+    # Stop tor proxy after 1 hour
+    time.sleep(60 * 60)
+    tor_proxy.stop
+
+    

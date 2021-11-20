@@ -1,0 +1,8 @@
+
+*.pyc
+proxy/tor_configs/win/Data/Tor/cached-certs
+proxy/tor_configs/win/Data/Tor/cached-microdesc-consensus
+proxy/tor_configs/win/Data/Tor/cached-microdescs
+proxy/tor_configs/win/Data/Tor/cached-microdescs.new
+proxy/tor_configs/win/Data/Tor/lock
+proxy/tor_configs/win/Data/Tor/state

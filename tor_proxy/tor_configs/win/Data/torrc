@@ -1,0 +1,13 @@
+ControlPort 9051
+GeoIPFile C:\Users\Yicong\Documents\Github Projects\tor\tor_proxy\tor_configs\win\Data\Tor\geoip
+GeoIPv6File C:\Users\Yicong\Documents\Github Projects\tor\tor_proxy\tor_configs\win\Data\Tor\geoip6
+DataDirectory C:\Users\Yicong\Documents\Github Projects\tor\tor_proxy\tor_configs\win\Data\Tor
+HashedControlPassword 16:E36BCCBA0A5398B760CBF7BCAEB41BA67A4973BF5AA2857D0421CE5020
+HiddenServiceStatistics 0
+Log notice stdout
+SocksPort 9050
+ExitNodes {SG},{JP}
+ExcludeExitNodes {KR}
+ExcludeNodes {US}
+MaxCircuitDirtiness 60
+StrictNodes 0
