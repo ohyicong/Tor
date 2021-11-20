@@ -44,9 +44,9 @@ Field | Required | Description | Defaults
 connection_port| Optional | listening port for socks | 9050
 control_port| Optional | communication port for tor | 9051
 refesh_rate| Optional | frequency to rebuild a tor connection. high frequency improves your annonymity but decrease your network performance | 300 seconds
-exit_node | Optional |country ip that you will see when you visit https://api.myip.com/ | "" (use any available exit nodes)
-exclude_exit_nodes| Optional | do not use tor nodes from the specified countries | "" (use any available exit nodes)
-exclude_nodes | Optional | do not use tor nodes from the specified countries | "" (use any available nodes)
+exit_node | Optional |country ip that you will see when you visit https://api.myip.com/ | when not specified, it uses any available exit nodes
+exclude_exit_nodes| Optional | do not use tor nodes from the specified countries | when not specified, it uses any available exit nodes
+exclude_nodes | Optional | do not use tor nodes from the specified countries | when not specified, it uses any available nodes
 
 
 
