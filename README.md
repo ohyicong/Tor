@@ -41,12 +41,12 @@ tor_proxy.stop
 ### ***Arguments***
 Field | Required | Description | Defaults
 :---  | :---: | :---: | :---
-connection_port| Optional | listening port for socks | default to 9050
-control_port| Optional | communication port for tor | default to 9051
-refesh_rate| Optional | frequency to rebuild a tor connection. high frequency improves your annonymity but decrease your network performance | default to 300 seconds
-exit_node | Optional |country ip that you will see when you visit https://api.myip.com/ | default to "" (use any available exit nodes)
-exclude_exit_nodes| Optional | do not use tor nodes from the specified countries | default to "" (use any available exit nodes)
-exclude_nodes | Optional | do not use tor nodes from the specified countries | default to "" (use any available nodes)
+connection_port| Optional | listening port for socks | 9050
+control_port| Optional | communication port for tor | 9051
+refesh_rate| Optional | frequency to rebuild a tor connection. high frequency improves your annonymity but decrease your network performance | 300 seconds
+exit_node | Optional |country ip that you will see when you visit https://api.myip.com/ | "" (use any available exit nodes)
+exclude_exit_nodes| Optional | do not use tor nodes from the specified countries | "" (use any available exit nodes)
+exclude_nodes | Optional | do not use tor nodes from the specified countries | "" (use any available nodes)
 
 
 
