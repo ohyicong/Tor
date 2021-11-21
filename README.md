@@ -2,7 +2,7 @@
 
 **This python module creates a socks5 connection to TOR. It was adapted from r0oth3x49 tor project.**
 
-[![IMAGE ALT TEXT](https://github.com/ohyicong/Tor/blob/master/images/tor_progress.PNG)]
+![IMAGE ALT TEXT](https://github.com/ohyicong/Tor/blob/master/images/tor_progress.PNG)
 
 ### ***Features***
 1. Auto update IPv4 & IPv6 TOR nodes.
