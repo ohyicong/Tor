@@ -6,3 +6,8 @@ proxy/tor_configs/win/Data/Tor/cached-microdescs
 proxy/tor_configs/win/Data/Tor/cached-microdescs.new
 proxy/tor_configs/win/Data/Tor/lock
 proxy/tor_configs/win/Data/Tor/state
+test.py
+tor_proxy/tor_configs/win/Data/Tor/cached-microdesc-consensus
+tor_proxy/tor_configs/win/Data/Tor/cached-microdescs.new
+tor_proxy/tor_configs/win/Data/Tor/state
+tor_proxy/tor_configs/win/Data/torrc
