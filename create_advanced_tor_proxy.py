@@ -9,6 +9,7 @@ import os
 import stem.process
 from stem.control import Controller
 from stem import Signal
+from stem import CircStatus
 import re
 import requests
 import json
@@ -31,3 +32,14 @@ tor_process = stem.process.launch_tor_with_config(
 )
 
 
+with Controller.from_port(port = 9051) as controller:
+    controller.authenticate()
+    for circ in sorted(controller.get_circuits()):
+        if circ.status == CircStatus.BUILT:
+            print("Circuit %s (%s)" % (circ.id, circ.purpose))
+            for i, entry in enumerate(circ.path):
+                div = '+' if (i == len(circ.path) - 1) else '|'
+                fingerprint, nickname = entry
+                desc = controller.get_network_status(fingerprint, None)
+                address = desc.address if desc else 'unknown'
+                print(" %s- %s (%s, %s)" % (div, fingerprint, nickname, address))
