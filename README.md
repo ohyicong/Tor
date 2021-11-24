@@ -1,4 +1,4 @@
-# Python Tor usage 
+# Tor python usage (Stem library) 
 
 **I have created this project for my medium writeup on "Creating tor proxy with python".
 **This project is to raise awareness on this awesome TOR python library called stem. 
