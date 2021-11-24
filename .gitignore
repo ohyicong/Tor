@@ -11,3 +11,13 @@ tor_proxy/tor_configs/win/Data/Tor/cached-microdesc-consensus
 tor_proxy/tor_configs/win/Data/Tor/cached-microdescs.new
 tor_proxy/tor_configs/win/Data/Tor/state
 tor_proxy/tor_configs/win/Data/torrc
+tor_proxy/tor_configs/win/Data/Tor/lock
+tor_proxy/tor_configs/win/Data/Tor/cached-certs
+data/tor/cached-microdesc-consensus
+data/tor/cached-microdescs.new
+data/tor/cached-microdescs
+data/tor/cached-certs
+data/tor/control_auth_cookie
+data/tor/lock
+data/tor/state
+data/torrc
