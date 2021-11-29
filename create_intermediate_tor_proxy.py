@@ -28,7 +28,7 @@ tor_process = stem.process.launch_tor_with_config(
     'StrictNodes' : '0',
     'CookieAuthentication' : '1',
     'MaxCircuitDirtiness' : '60',
-    'GeoIPFile' : 'https://raw.githubusercontent.com/torproject/tor/main/src/config/geoip',
+    'GeoIPFile' : GEOIPFILE_PATH,
     
   },
   init_msg_handler = lambda line: print(line) if re.search('Bootstrapped', line) else False,
